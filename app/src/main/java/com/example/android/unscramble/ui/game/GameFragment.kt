@@ -84,6 +84,7 @@ class GameFragment : Fragment() {
             isFinished.observe(viewLifecycleOwner) {
                 if(it == true) {
                     showScoreDialog(score.value!!)
+                    /*
                     binding.apply {
                         textViewUnscrambledWord.text = "-"
                         wordCount.text = getString(
@@ -91,6 +92,7 @@ class GameFragment : Fragment() {
                         )
                         textInputEditText.text = null
                     }
+                     */
                 }
             }
         }
